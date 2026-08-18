@@ -5,7 +5,7 @@
 }
 @font-face {
   font-family: main;
-  src: url("font/main.otf");
+  src: url("main.otf");
 }
 a {
   text-decoration: none;
