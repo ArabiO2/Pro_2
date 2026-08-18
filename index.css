@@ -1,0 +1,188 @@
+* {
+  box-sizing: border-box;
+  user-select: none;
+  z-index: 3;
+}
+@font-face {
+  font-family: main;
+  src: url("font/main.otf");
+}
+a {
+  text-decoration: none;
+  border: none;
+  color: inherit;
+}
+body {
+  margin: 0;
+  background-color: black;
+  height: 1000px;
+}
+
+.head {
+  width: 80%;
+  min-height: 40px;
+  margin: auto;
+  border-radius: 47px;
+  top: 8px;
+  transform: translateY(5px);
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  padding: 6px;
+  border: none;
+  border-radius: 47px;
+  background-color: red;
+  color: floralwhite;
+  height: 40px;
+  width: 28%;
+  transition: 0.6s;
+  font-family: main;
+  cursor: pointer;
+}
+
+.btn:hover {
+  transform: scale(0.9);
+  background-color: blue;
+}
+.material-symbols-outlined {
+  font-family: "Material Symbols Outlined";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  color: aliceblue;
+
+  /* التحكم في خصائص الأيقونة */
+  font-variation-settings:
+    "FILL" 0,
+    "wght" 400,
+    "GRAD" 0,
+    "opsz" 24;
+}
+
+.love {
+  background-color: ghostwhite;
+  width: 60%;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 39px;
+  text-align: center;
+}
+
+.loveicon {
+  color: black;
+  font-variation-settings:
+    "FILL" 0,
+    "wght" 400,
+    "GRAD" 0,
+    "opsz" 24;
+  transition: 0.5s;
+}
+
+.love .counter {
+  font-size: 25px;
+  font-family: main;
+}
+.coloredHeart {
+  color: red;
+  font-variation-settings:
+    "FILL" 1,
+    "wght" 400,
+    "GRAD" 0,
+    "opsz" 24;
+  transition: 0.5s;
+}
+.scrollUp {
+  position: fixed;
+  bottom: 10px;
+  right: 47px;
+  background-color: blue;
+  padding: 4px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.scrollDown {
+  position: fixed;
+  cursor: pointer;
+  bottom: 10px;
+  right: 10px;
+  background-color: red;
+  padding: 4px;
+  border-radius: 6px;
+}
+.menu {
+  padding: 5px;
+  background-color: red;
+  border-radius: 6px;
+  position: fixed;
+  top: 10%;
+  left: 1px;
+}
+
+.bar {
+  position: fixed;
+  top: 10%;
+  left: 1px;
+  background-color: wheat;
+  width: 147px;
+  min-height: 200px;
+  border-radius: 6px;
+  transition: 0.6s;
+  opacity: 0;
+  z-index: -3;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.barLayer {
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  z-index: 4;
+  top: 0;
+  right: 0;
+}
+.bar-in {
+  opacity: 1;
+  z-index: 5;
+}
+
+.hide {
+  display: none;
+}
+.opc {
+  opacity: 0;
+}
+
+.bar-div {
+  width: 40%;
+  height: 50px;
+  border-radius: 15px;
+}
+.bar span {
+  color: black;
+  position: absolute;
+}
+.bar .red {
+  background-color: red;
+}
+.bar .blue {
+  background-color: blue;
+}
+.bar .green {
+  background-color: green;
+}
+.bar .black {
+  background-color: black;
+}
